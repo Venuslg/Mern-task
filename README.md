@@ -1,6 +1,10 @@
 # React, Express, REST API, and MongoDB signup
 
-A responsive signup and login page connected to an Express REST API. MongoDB stores each account, and bcrypt stores a password hash instead of the original password. The form follows the supplied reference image: centered serif heading, email and password lines, and a light-blue action button.
+A responsive signup and login page connected to an Express REST API. MongoDB stores each account, and bcrypt stores a password hash instead of the original password. The signup screen has a centered serif heading, underlined email and password fields, and a light-blue action button.
+
+## Signup screen preview
+
+![Signup screen preview](screenshots/signup-preview.png)
 
 ## How the signup process works
 
@@ -20,13 +24,14 @@ A responsive signup and login page connected to an Express REST API. MongoDB sto
 
 ### 2. Configure MongoDB
 
-Copy `.env.example` to `.env`, then set `MONGODB_URI` to your local MongoDB address or Atlas connection string. The example connects to a local database named `signup_app`:
+Create a `.env` file in the project folder and set your MongoDB address. For a local database named `signup_app`, use:
 
-```powershell
-Copy-Item .env.example .env
+```env
+MONGODB_URI=mongodb://127.0.0.1:27017/signup_app
+PORT=3000
 ```
 
-Keep `.env` private. It is ignored by Git and should not be uploaded.
+Keep `.env` on your computer. Git ignores it, so the file and any database credentials are not uploaded.
 
 ### 3. Install project dependencies
 
@@ -95,7 +100,7 @@ Returns the API status and whether its MongoDB connection is active.
 - `models/User.js` — MongoDB user schema and unique email index
 - `server.js` — Express app, MongoDB connection, API routes, and production file serving
 - `vite.config.js` — local `/api` proxy to Express
-- `.env.example` — local configuration template
+- `screenshots/signup-preview.png` — signup screen preview shown above
 
 ## Production build
 
