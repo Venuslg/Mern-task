@@ -1,10 +1,14 @@
 # React, Express, REST API, and MongoDB signup
 
-A responsive signup and login page connected to an Express REST API. MongoDB stores each account, and bcrypt stores a password hash instead of the original password. The signup screen has a centered serif heading, underlined email and password fields, and a light-blue action button.
+A polished, responsive signup and login experience connected to an Express REST API. MongoDB stores each account, and bcrypt stores a password hash instead of the original password.
 
-## Signup screen preview
+## Preview
 
-![Signup screen preview](screenshots/signup-preview.png)
+![Signup page screenshot](screenshots/signup-preview.png)
+
+![Signup form and login view demo](screenshots/signup-demo.gif)
+
+*The demo uses sample form values and does not submit them.*
 
 ## How the signup process works
 
@@ -100,7 +104,8 @@ Returns the API status and whether its MongoDB connection is active.
 - `models/User.js` — MongoDB user schema and unique email index
 - `server.js` — Express app, MongoDB connection, API routes, and production file serving
 - `vite.config.js` — local `/api` proxy to Express
-- `screenshots/signup-preview.png` — signup screen preview shown above
+- `screenshots/signup-preview.png` — signup page screenshot
+- `screenshots/signup-demo.gif` — animated signup and login preview
 
 ## Production build
 
@@ -114,4 +119,3 @@ The Express server serves the production frontend from `dist`. Set `MONGODB_URI`
 ## Security scope
 
 Passwords are hashed with bcrypt and are never stored or returned in plain text. The API enforces a minimum of 8 characters for new passwords and bcrypt's 72-byte maximum. Login in this starter demonstrates credential checking; add a session or signed token before using it to protect private application pages.
-
