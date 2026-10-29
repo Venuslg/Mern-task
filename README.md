@@ -95,7 +95,7 @@ Returns the API status and whether its MongoDB connection is active.
 ## Project map
 
 - `src/main.jsx` — React signup and login forms and API requests
-- `src/style.css` — layout and styling based on the supplied image
+- `src/style.css` — signup page styling
 - `routes/auth.js` — signup and login REST endpoints
 - `models/User.js` — MongoDB user schema and unique email index
 - `server.js` — Express app, MongoDB connection, API routes, and production file serving
