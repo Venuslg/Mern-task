@@ -59,7 +59,7 @@ This starts the Vite development server and the Express server. Open [http://loc
 
 ### 6. Create an account
 
-Enter an email address and a password with at least 8 characters, then choose **Sign Up**. A successful signup switches the form to **Log In**. The same email cannot be registered twice.
+Enter an email address, a password with at least 8 characters, and the matching confirmation, then choose **Create account**. A successful signup switches the form to **Log In**. The same email cannot be registered twice.
 
 ## API reference
 
