@@ -119,3 +119,7 @@ The Express server serves the production frontend from `dist`. Set `MONGODB_URI`
 ## Security scope
 
 Passwords are hashed with bcrypt and are never stored or returned in plain text. The API enforces a minimum of 8 characters for new passwords and bcrypt's 72-byte maximum. Login in this starter demonstrates credential checking; add a session or signed token before using it to protect private application pages.
+
+## Another project
+
+See [Itemly — React CRUD inventory manager](itemly-react-crud/README.md) for the companion inventory app, including its screenshot and animated CRUD walkthrough.
